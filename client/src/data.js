@@ -1,17 +1,18 @@
 export const sliderItems = [
   {
     id: 1,
-    img: "https://i.ibb.co/bKTrq1h/2.png",
-    title: "AUTUMN COLLECTION",
-    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-    bg: "fcf1ed",
+    img: "https://i.ibb.co/wBBQ0X0/Silhouettes-head-girls-Logo-and-advirtising-element-Vector-illustration.jpg",
+    title: "For Women",
+    desc: "Find your favourite articles.",
+    bg: "E1C699",
+    /*fcf1ed */
   },
   {
     id: 2,
     img: "https://i.ibb.co/fxK7QKs/7.png",
     title: "LOUNGEWEAR LOVE",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-    bg: "fbf0f4",
+    bg: "E1C699",
   },
 ];
 

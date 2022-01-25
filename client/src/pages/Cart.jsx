@@ -174,6 +174,7 @@ const Cart = () => {
           tokenId: stripeToken.id,
           amount: 500,
         });
+      
         history.push("/success", {
           stripeData: res.data,
           products: cart, });
@@ -202,9 +203,6 @@ const Cart = () => {
                     <ProductName>
                       <b>Product:</b> {product.title}
                     </ProductName>
-                    <ProductId>
-                      <b>ID:</b> {product._id}
-                    </ProductId>
                     <ProductColor color={product.color} />
                     <ProductSize>
                       <b>Size:</b> {product.size}
@@ -241,7 +239,7 @@ const Cart = () => {
             </SummaryItem>
             <SummaryItem type="total">
               <SummaryItemText>Total</SummaryItemText>
-              <SummaryItemPrice>$ {cart.total}</SummaryItemPrice>
+              <SummaryItemPrice>$ {cart.total-5.90}</SummaryItemPrice>
             </SummaryItem>
             <StripeCheckout
               name="BestShop"
@@ -249,7 +247,7 @@ const Cart = () => {
               billingAddress
               shippingAddress
               description={`Your total is $${cart.total}`}
-              amount={cart.total * 100}
+              amount={cart.total * 100-5.90}
               token={onToken}
               stripeKey={KEY}
             >
